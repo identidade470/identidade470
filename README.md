@@ -25,4 +25,6 @@ function Human.new()
   return self
 end
 
+return Human
+
 ```
