@@ -11,7 +11,7 @@ function Human.new()
   self.Name = "Gabriel"
   self.UserName = "IDENTIDADE470"
 
-  self.Gender = Enum.Genders.Male
+  self.Gender = "Male"
   self.Languages = {
     "English",
     "Brazilian Portuguese"
