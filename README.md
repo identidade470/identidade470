@@ -1,16 +1,28 @@
-## Hi there 👋
+## About me 👋
 
-<!--
-**identidade470/identidade470** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+```lua
 
-Here are some ideas to get you started:
+local Human = {}
+Human.__index = Human
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+function Human.new()
+  local self = setmetatable({}, Human)
+
+  self.Name = "Gabriel"
+  self.UserName = "IDENTIDADE470"
+
+  self.Gender = Enum.Genders.Male
+  self.Languages = {
+    "English",
+    "Brazilian Portuguese"
+  }
+  self.ProgrammingLanguages = {
+    "C++",
+    "Lua / Luau",
+    "Java"
+  }
+
+  return self
+end
+
+```
